@@ -1,0 +1,156 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+section {
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Styling for skill and project boxes */
+.skill, .project {
+    background: #fff;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon, .project img {
+    width: 80px; /* Medium size */
+    height: 80px; /* Medium size */
+    border-radius: 50%; /* 50% border radius for circular images */
+    object-fit: cover; /* Ensures images cover their containers */
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 0.5rem;
+}
+
+.progress {
+    background: #4caf50;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 8px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .skill, .project {
+        padding: 0.5rem;
+    }
+
+    .skill-icon, .project img {
+        width: 60px; 
+        height: 60px;
+    }
+}
